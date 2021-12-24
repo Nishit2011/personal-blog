@@ -1,0 +1,12 @@
+.postcard {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.postcard .title {
+  color: red;
+}
+.postcard .content {
+  color: green;
+}
