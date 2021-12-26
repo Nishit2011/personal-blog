@@ -1,5 +1,4 @@
 import "./App.css";
-import Header from "./components/Header";
 import Content from "./components/Content";
 import Home from "./components/Home";
 import WebDev from "./components/WebDev";
@@ -8,12 +7,13 @@ import Docker from "./components/Docker";
 import K8S from "./components/K8S";
 import Arch from "./components/Arch";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <Header />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/webdev" element={<WebDev />}></Route>

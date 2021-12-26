@@ -1,18 +1,28 @@
 import React from "react";
-
+import style from "../app.module.css";
+import { Link } from "react-router-dom";
 const Menu = () => {
   return (
-    <div>
-      <ul>
+    <div className={style.menu}>
+      <Link to="/">
         <li>Home</li>
+      </Link>
+      <Link to="/webdev">
         <li>Web Development</li>
-        <li>AWS</li>
+      </Link>
+      <Link to="/cloud">
+        <li>Cloud</li>
+      </Link>
+      <Link to="/docker">
         <li>Docker</li>
+      </Link>
+      <Link to="/k8s">
         <li>Kubernetes</li>
-        <li>Backend</li>
+      </Link>
+      {/* <Link to="backend">Backend</Link> */}
+      <Link to="/arch">
         <li>Architecture</li>
-        {/* <li>Titbits</li> */}
-      </ul>
+      </Link>
     </div>
   );
 };

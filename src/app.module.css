@@ -1,3 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 .postcard {
   width: 300px;
   height: 300px;
@@ -9,4 +23,44 @@
 }
 .postcard .content {
   color: green;
+}
+
+.header {
+  position: relative;
+  background-color: rgba(145, 13, 13);
+  height: 250px;
+  color: white;
+  z-index: 1;
+}
+
+.header::before {
+  position: absolute;
+  content: "";
+  background-image: url("./assets/sea-beach.jpeg");
+  opacity: 0.1;
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+  width: 100%;
+  left: 0px;
+  top: 0;
+
+  z-index: -1;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.menu li {
+  background-color: white;
+  color: rgba(145, 13, 13);
+  padding: 3px;
+  width: 145px;
+  margin-top: 2%;
+  margin-right: 20px;
+  border: 1px solid rgba(145, 13, 13);
+  border-radius: 30px;
 }
