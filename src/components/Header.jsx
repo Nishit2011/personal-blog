@@ -9,9 +9,8 @@ const Header = () => {
       <div className={style.header}>
         <h1>TECH DIGEST</h1>
         <h5>by Nishit Ranjan</h5>
+        <Menu />
       </div>
-
-      <Menu />
     </div>
   );
 };
