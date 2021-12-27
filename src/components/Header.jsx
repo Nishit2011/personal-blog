@@ -7,8 +7,11 @@ const Header = () => {
   return (
     <div>
       <div className={style.header}>
-        <h1>TECH DIGEST</h1>
-        <h5>by Nishit Ranjan</h5>
+        <div className={style.headerName}>
+          <h1>TECH DIGEST</h1>
+          <h5>by Nishit Ranjan</h5>
+        </div>
+
         <Menu />
       </div>
     </div>
